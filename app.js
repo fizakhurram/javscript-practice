@@ -35,23 +35,23 @@
 // }
 // console.log(myarr.join(" "));
 
-var palindrome = prompt("Enter any one palidrome").toLowerCase();
-result= ""
-for(i=0 ; i<palindrome.length ; i++){
-    if(palindrome[i] !== " "){
-        result+=palindrome[i]
-    }
-}
-matchfound=true;
-for(i=0 ; i<result.length/2; i++){
-    if(result[i]!== result[result.length-1-i]){
-        matchfound=false;
-        break;
-    }
-}
-if(matchfound){
-    console.log("palindrome");
-}else{console.log("not palindrome")};
+// var palindrome = prompt("Enter any one palidrome").toLowerCase();
+// result= ""
+// for(i=0 ; i<palindrome.length ; i++){
+//     if(palindrome[i] !== " "){
+//         result+=palindrome[i]
+//     }
+// }
+// matchfound=true;
+// for(i=0 ; i<result.length/2; i++){
+//     if(result[i]!== result[result.length-1-i]){
+//         matchfound=false;
+//         break;
+//     }
+// }
+// if(matchfound){
+//     console.log("palindrome");
+// }else{console.log("not palindrome")};
 // explination---is me hum ne user se word lia than result ka var declare kr k chor dia than ek loop chalaya k user jo input de us me space na ho or usy simply result ale var me bhej do than hum again ek loop chalaynge matchfound true kr k than hum half loop chalaynge..
 // ab condition ka mtlb step by step example madam 
 //  result[0] "m" is not equal to result[4] "m" --ye last wala m
@@ -62,4 +62,48 @@ if(matchfound){
 // result[0] "h" is not equal to result[5] "h"
 // result[1] "a" is not equal to result[4] "a"
 // result[2] "n" is not equal to result[3] "n"
+
+// ____________18 september 25_____________
+
+// var str = "fizaKHurram345@1234_3gdujhdggxbuxuopoowq1668908*"
+// var password = ""
+// for(i=0; i<str.length; i++){
+//     var randompassword = Math.floor(Math.random()*str.length);
+//     password +=str[randompassword];
+
+// }
+// console.log(password);
+
+// var date = Date.now();
+// console.log(date)//ye miliseconds me dega 1971 se ab tk jitne mili sec hue hain tw is comlication se bachne k liye js ne kch methods btay hain
+// date = new Date();
+// console.log(date)//ye humein sb btayga date day time gmt
+// // or ye humein num me dega agr method(slice etc) lgana hai tw pehle isy string me convert krna parega us k liye
+// date =date.toString();
+// date =date.slice(0,15);
+// console.log(date);
+// // ye tw hogya lekin agr agr sirf day chahiye tw
+// // again hum isy num m convert krengy date k functions lgane k liye
+// date = number(date)
+// date= date.getDay();
+// console.log(day);
+
+// _________19 september 25__________
+
+var userDOB = new Date(prompt("Enter your DOB"));
+// console.log(userDOB)
+var today =  new Date();
+// console.log(today)
+userDOB = new Date(userDOB);
+// console.log(userDOB);
+var difference = today.getTime() - userDOB.getTime();
+// console.log(difference);
+age = Math.round(difference/(1000*60*60*24*30*12;
+console.log(age);
+
+
+
+
+
+
 
