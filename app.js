@@ -98,7 +98,7 @@ userDOB = new Date(userDOB);
 // console.log(userDOB);
 var difference = today.getTime() - userDOB.getTime();
 // console.log(difference);
-age = Math.round(difference/(1000*60*60*24*30*12;
+age = Math.round(difference/(1000*60*60*24*30*12));
 console.log(age);
 
 
