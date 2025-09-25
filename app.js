@@ -90,18 +90,73 @@
 
 // _________19 september 25__________
 
-var userDOB = new Date(prompt("Enter your DOB"));
-// console.log(userDOB)
-var today =  new Date();
-// console.log(today)
-userDOB = new Date(userDOB);
-// console.log(userDOB);
-var difference = today.getTime() - userDOB.getTime();
-// console.log(difference);
-age = Math.round(difference/(1000*60*60*24*30*12));
-console.log(age);
+// var userDOB = new Date(prompt("Enter your DOB"));
+// // console.log(userDOB)
+// var today =  new Date();
+// // console.log(today)
+// userDOB = new Date(userDOB);
+// // console.log(userDOB);
+// var difference = today.getTime() - userDOB.getTime();
+// // console.log(difference);
+// age = Math.round(difference/(1000*60*60*24*30*12));
+// console.log(age);
 
 
+// ______________25 sep 25___________
+// ___________q no 1__________
+// function currentdatetime(datetime){
+//     document.write(datetime);
+// }
+// currentdatetime(new Date());
+
+// // ____________q no 2___________
+// function username(userfirstname,userlastname){
+//     console.log("Thank You so much " + userfirstname +"" + userlastname );
+
+// }
+// username(prompt("Enter Your First name...") , prompt("Enter Your Last name..."));
+
+// _________q no 3______________
+// function nums(num1 , num2){//in this() are parameters (params)..
+//     console.log(num1 + num2)
+// }
+// var usernum1 = Number(prompt("Enter the first num for sum.."));//____________arguments
+// var usernum2 = Number(prompt("Enter the second number for sum.."));//__________
+// nums(usernum1 , usernum2);
+
+// _________q no 4_______________
+// there are two methods
+//the first one is
+function userdata(num1 , num2 , operator){
+    if(operator==="+"){
+        document.write(num1 + num2);
+    }else if(operator==="-"){
+        document.write(num1 - num2);
+    }else if(operator=== "/"){
+        document.write(num1 / num2);
+    }else if(operator === "*"){
+        document.write(num1 * num2)
+    }else{
+        alert("Invalid Operator")
+    }
+}
+usernum1 = Number(prompt("Enter the first num"));
+usernum2 = Number(prompt("Enter the second num"))
+useroperator = Number(prompt("Enter the operator"));
+userdata(usernum1 , usernum2 , useroperator);
+//the second one is
+
+function userdata(num1 , num2 , operator ){
+    var add = num1 + num2
+    var sub = num1 - num2
+    var multiplication = num1 * num2 
+    var divide = num1 / num2
+    return [add , sub , multiplication , divide];
+}
+var usernum1 = parseInt(prompt("Enter the first num"));
+var usernum2 = parseInt(prompt("Enter the second num"));
+var useroperator =prompt("Enter the operator");
+userdata(usernum1 , usernum2 , useroperator);
 
 
 
