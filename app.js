@@ -127,36 +127,59 @@
 // _________q no 4_______________
 // there are two methods
 //the first one is
-function userdata(num1 , num2 , operator){
-    if(operator==="+"){
-        document.write(num1 + num2);
-    }else if(operator==="-"){
-        document.write(num1 - num2);
-    }else if(operator=== "/"){
-        document.write(num1 / num2);
-    }else if(operator === "*"){
-        document.write(num1 * num2)
-    }else{
-        alert("Invalid Operator")
-    }
-}
-usernum1 = Number(prompt("Enter the first num"));
-usernum2 = Number(prompt("Enter the second num"))
-useroperator = Number(prompt("Enter the operator"));
-userdata(usernum1 , usernum2 , useroperator);
-//the second one is
+// function userdata(num1 , num2 , operator){
+//     if(operator==="+"){
+//         document.write(num1 + num2);
+//     }else if(operator==="-"){
+//         document.write(num1 - num2);
+//     }else if(operator=== "/"){
+//         document.write(num1 / num2);
+//     }else if(operator === "*"){
+//         document.write(num1 * num2)
+//     }else{
+//         alert("Invalid Operator")
+//     }
+// }
+// usernum1 = Number(prompt("Enter the first num"));
+// usernum2 = Number(prompt("Enter the second num"))
+// useroperator = Number(prompt("Enter the operator"));
+// userdata(usernum1 , usernum2 , useroperator);
+// //the second one is
 
-function userdata(num1 , num2 , operator ){
-    var add = num1 + num2
-    var sub = num1 - num2
-    var multiplication = num1 * num2 
-    var divide = num1 / num2
-    return [add , sub , multiplication , divide];
+// function userdata(num1 , num2 , operator ){
+//     var add = num1 + num2
+//     var sub = num1 - num2
+//     var multiplication = num1 * num2 
+//     var divide = num1 / num2
+//     return [add , sub , multiplication , divide];
+// }
+// var usernum1 = parseInt(prompt("Enter the first num"));
+// var usernum2 = parseInt(prompt("Enter the second num"));
+// var useroperator =prompt("Enter the operator");
+// userdata(usernum1 , usernum2 , useroperator);
+
+function factorior (n){
+    alert("factorior");
+    var result = 1;// like i=1*1=1 , i=2*1=2 , i=3*1=3 and so on the value one is given b/c of the same number
+    for(i=1 ; i<=n ; i++){
+        result*= i;//result=1 , i=1 so 1*1=1 now result is 1 and i=2 so 1*2=2 than result is updated and its value is 2 i=3 so 2*3=6 than result is 6 and i=4 so 6*4=24
+    }
+    return result ;
+
 }
-var usernum1 = parseInt(prompt("Enter the first num"));
-var usernum2 = parseInt(prompt("Enter the second num"));
-var useroperator =prompt("Enter the operator");
-userdata(usernum1 , usernum2 , useroperator);
+document.write(factorior(Number(prompt("Enter the number for factorior"))));
+
+function calculatesqaure(x){
+    return x**2//x ka square(x*x)
+}
+// h=b+p
+function calculate_h(base,perpendicular){
+    function calculatesquare(x){
+        return x**2
+    }
+    var Hypotenous = calculatesquare(base)+ calculate 
+}
+
 
 
 
